@@ -1,0 +1,107 @@
+body { 
+    background-color: #f8f8f8; 
+    color: #333; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+} 
+
+.generator { 
+    background-color: #f5f5f5; 
+    width: 250px; 
+    margin: 150px auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+} 
+
+div.password { 
+    display: grid; 
+    grid-template-columns: auto min-content; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    background-color: #eee; 
+} 
+
+div.password input { 
+    padding: 7px 10px; 
+    background-color: #ddd; 
+    border: 0; 
+    color: #333; 
+    font-weight: bold; /* Making the password text bold for emphasis */
+    letter-spacing: 1px; /* Adding a little space between characters */
+} 
+
+button { 
+    background-color: #4caf50; 
+    color: #fff; 
+    text-transform: uppercase; 
+    padding: 5px 15px; 
+    border: 0; 
+    border-radius: 10px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    cursor: pointer; 
+} 
+
+button:hover { 
+    background-color: #45a049; 
+    transform: scale(1.05); /* Button gets slightly bigger on hover */
+} 
+
+div.password button { 
+    border-radius: 0; 
+} 
+
+div.range { 
+    margin: 10px 0; 
+    display: grid; 
+    grid-template-columns: 1fr min-content; 
+} 
+
+div.range span { 
+    background-color: #ddd; 
+    padding: 10px; 
+    margin-left: 20px; 
+    min-width: 30px; 
+    text-align: center; 
+    border-radius: 10px; 
+    font-weight: bold; /* Making the range number bold */
+} 
+
+div.options { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+} 
+
+div.options label { 
+    display: block; 
+    background-color: #ddd; 
+    padding: 10px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-family: sans-serif; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+} 
+
+div.options label:hover { 
+    background-color: #ccc; 
+    transform: scale(1.05); /* Options get slightly bigger on hover */
+} 
+
+button.generate { 
+    width: 100%; 
+    margin-top: 10px; 
+    padding: 10px; 
+    font-size: 16px; /* Bigger text for the generate button */
+    background-color: #ff5722; /* Bold orange color for the generate button */
+} 
+
+button.generate:hover { 
+    background-color: #e64a19; 
+} 
+
+h1 { 
+    text-align: center; 
+    color: #4caf50; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; /* Adding space between letters for a dramatic effect */
+}
