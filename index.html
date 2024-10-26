@@ -1,63 +1,60 @@
 <!-- index.html -->
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 
-<head> 
-	<meta charset="UTF-8" /> 
-	<meta name="viewport"
-		content="width=device-width, 
-				initial-scale=1.0" /> 
-	<link rel="stylesheet" href="style.css" /> 
-	<title>Password Generator</title> 
-</head> 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+</head>
 
-<body> 
-	<h1>Password Generator</h1> 
-	<div class="generator"> 
-		<div class="password"> 
-			<input type="text" value="test" /> 
-			<button>copy</button> 
-		</div> 
-		<div class="range"> 
-			<input type="range" min="4"
-				max="24" value="8" /> 
-			<span>8</span> 
-		</div> 
-		<div class="options"> 
-			<div class="option"> 
-				<label> 
-					<input type="checkbox"
-						id="lowercaseCb" checked /> 
-					<span>a-z</span> 
-				</label> 
-			</div> 
-			<div class="option"> 
-				<label> 
-					<input type="checkbox"
-						id="uppercaseCb" /> 
-					<span>A-Z</span> 
-				</label> 
-			</div> 
-			<div class="option"> 
-				<label> 
-					<input type="checkbox"
-						id="digitsCb" /> 
-					<span>0-9</span> 
-				</label> 
-			</div> 
-			<div class="option"> 
-				<label> 
-					<input type="checkbox"
-						id="specialsCb" /> 
-					<span>!@$#%^</span> 
-				</label> 
-			</div> 
-		</div> 
-		<button class="generate"> 
-			generate 
-		</button> 
-	</div> 
-	<script src="script.js"></script> 
-</body> 
+<body>
+    <h1>Password Generator</h1>
+    <div class="generator">
+        <!-- Display the generated password and copy button -->
+        <div class="password">
+            <input type="text" value="test" readonly /> <!-- Input field for generated password -->
+            <button>Copy</button> <!-- Button to copy the password -->
+        </div>
+        
+        <!-- Slider to select password length -->
+        <div class="range">
+            <input type="range" min="4" max="24" value="8" />
+            <span>8</span> <!-- Display the current password length -->
+        </div>
+        
+        <!-- Options for password character types -->
+        <div class="options">
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="lowercaseCb" checked />
+                    <span>a-z</span> <!-- Include lowercase letters -->
+                </label>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="uppercaseCb" />
+                    <span>A-Z</span> <!-- Include uppercase letters -->
+                </label>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="digitsCb" />
+                    <span>0-9</span> <!-- Include digits -->
+                </label>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="specialsCb" />
+                    <span>!@$#%^</span> <!-- Include special characters -->
+                </label>
+            </div>
+        </div>
+        
+        <button class="generate">Generate</button> <!-- Button to generate the password -->
+    </div>
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
 
 </html>
